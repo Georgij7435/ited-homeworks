@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+
+    function testAlertDialog()  {
+
+         alert("hi");
+    }
+
+ </script>
+
+ <script type="text/javascript">
+
+    function testConfirmDialog()  {
+
+         var result = confirm("Do you want to continue?");
+
+         if(result)  {
+             alert("yes");
+         } else {
+             alert("no, go back");
+         }
+    }
+
+ </script>
+
+ <script type="text/javascript">
+
+    function testPromptDialog()  {
+
+         var result = prompt("Enter you age:", "18");
+
+         if(result != null)  {
+             alert("Your age is " + result);
+         }
+    }
+
+ </script>
+ <script>
+    console.log("Hello world!");
+ </script>
+
+<body>
+    <h2>Alert Dialog Box</h2>
+      <button onclick="testAlertDialog()">кнопка alert</button>
+      <h2>Confirmation Dialog Box</h2>
+      <button onclick="testConfirmDialog()">кнопка confirm</button>
+      <h2>Prompt Dialog Box</h2>
+      <button onclick="testPromptDialog()">кнопка prompt</button>
+</body>
+</html>
