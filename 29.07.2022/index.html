@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let arr = ["t", "e", "s", "t", "1", "2"];
+
+alert( arr.slice(1, 3) ); 
+
+alert( arr.slice(-2) ); 
+
+alert( arr.concat([3, 4]) ); 
+
+alert( arr.concat([3, 4], [5, 6]) ); 
+
+alert( arr.concat([3, 4], 5, 6) );
+
+["1", "1", "3"].forEach((item, index, array) => {
+  alert(`${item} имеет позицию ${index} в ${array}`);
+});
+delete arr[1]; 
+
+alert( arr[1] ); 
+
+alert( arr.length ); 
+
+arr.reverse();
+alert( arr ); 
+</script>
+<body>
+    
+</body>
+</html>
